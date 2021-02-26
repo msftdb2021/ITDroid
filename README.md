@@ -1,6 +1,7 @@
 # Purpose
 
-This project was created by The Sofware Design Lab at the Universidad de los Andes. The main goal of ITDroid project is to automatically detecting i18n
+<!-- This project was created by The Sofware Design Lab at the Universidad de los Andes.  -->
+The main goal of ITDroid project is to automatically detecting i18n
 changes in Android apps in a source-codeless fashion (i.e., without having access to the apps source code). ITDroid combines APK static analysis, automated translation of strings, and dynamic analysis techniques (i.e., GUI ripping and automated replay), to identify violations of GUI constraints when simulating apps execution with different languages. ITDroid also detects strings hard coded and declared in resource and code files that are not internationalized. The proposed approach operates in a source-codeless fashions, thus, it is agnostic of the native language used for creating the app (i.e.,, Java and Kotlin) because the analysis is done at the APK level.
 
 # Video
@@ -8,9 +9,9 @@ changes in Android apps in a source-codeless fashion (i.e., without having acces
 <p align="center">
 <iframe width="500" height="282" src="https://www.youtube.com/embed/ygN5mADVhZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-# Publications
+<!-- # Publications
 
-- _"An Empirical Study of i18n Collateral Changes and Bugs in GUIs of Android apps"_, [Camilo Escobar-Velásquez](https://caev03.github.io), [Michael Osorio-Riaño](https://michaelosorio2017.github.io/), Juan Dominguez-Osorio, Maria Arevalo, and [Mario Linares-Vásquez](https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/), in _The 36th IEEE International Conference on Software Maintenance and Evolution ([ICSME'20](https://icsme2020.github.io/))_, Research Track, Adelaide, Australia, September 27th - October 3rd, 2020, to appear 10 pages (24.9% Acceptance Rate) [[DOI](https://doi.org/10.1109/ICSME46990.2020.00061)][[bibtex](/assets/pdfs/escobar2020itdroid.bib)]
+- _"An Empirical Study of i18n Collateral Changes and Bugs in GUIs of Android apps"_, [Camilo Escobar-Velásquez](https://caev03.github.io), [Michael Osorio-Riaño](https://michaelosorio2017.github.io/), Juan Dominguez-Osorio, Maria Arevalo, and [Mario Linares-Vásquez](https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/), in _The 36th IEEE International Conference on Software Maintenance and Evolution ([ICSME'20](https://icsme2020.github.io/))_, Research Track, Adelaide, Australia, September 27th - October 3rd, 2020, to appear 10 pages (24.9% Acceptance Rate) [[DOI](https://doi.org/10.1109/ICSME46990.2020.00061)][[bibtex](/assets/pdfs/escobar2020itdroid.bib)] -->
   
 # Summary
 ITDROID is an open source tool for automatically detecting i18n bad practices and collateral changes introduced in the GUIs of Android apps. ITDROID is capable of identifying the strings that need to be translated, automatically translate them by using an external service, generate an internationalizaed APK and explore its different versions to detect and locate the changes in the GUI when using English as the default language, and 7 other languages as the target ones.
@@ -33,7 +34,7 @@ Given an Android App APK, MutAPK first extracts the Potential Fault Profile (PFP
 ## Compile
 Download and compile MutAPK with the following commands:
 ```
-git clone https://github.com/TheSoftwareDesignLab/ITDroid.git
+git clone https://github.com/msftdb2021/ITDroid.git
 cd ITDroid
 mvn clean
 mvn package
@@ -50,7 +51,7 @@ java -jar ITDroid-1.0.0.jar <APKPath> <AppPackage> <ExtraLibsFolder> <settingsDi
 Provide the following list of required arguments when running ITDroid:
 1. ``APKPath``: path to the app’s APK;
 2. ``AppPackage``: app package name used to identify the Android app;
-3. ``ExtraCompFolder``:   path to the folder that has the extra libraries used by ITDroid, for instance, this folder contains the executable file of our ripper.;
+3. ``ExtraCompFolder``:   path to the folder that has the extra libraries used by ITDroid, for instance, this folder contains the executable file of the ripper.;
 4. ``settingsDir``: path to the settings.properties file, that describes the target languages to be used during the execution.;
 5. ``amountUntranslatable``: integer number greater or equal to 0; it defines the accepted difference between the amount of strings internationalized by the developer in the default language and a target language. It is used by ITDroid to decide if the app have enough strings in a target language to be considerate as translated.;
 6. ``OutputFolder``: path to the folder where the results are going to be stored.;
