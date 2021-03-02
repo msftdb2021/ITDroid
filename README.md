@@ -7,7 +7,9 @@ changes in Android apps in a source-codeless fashion (i.e., without having acces
 # Video
 
 <p align="center">
-<iframe width="500" height="282" src="https://www.youtube.com/embed/ygN5mADVhZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<iframe width="500" height="282" src="https://www.youtube.com/embed/bzrPk_L0Ysw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="500" height="282" src="https://www.youtube.com/embed/KqylCqUZSaM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 <!-- # Publications
 
